@@ -22,3 +22,11 @@ From [FEniCS](https://fenicsproject.org/) Leveragin the ```GMRES``` algorithm an
 
 https://github.com/96mat/Turing-Patterns/assets/66094732/c5b18860-a128-4f6c-bcc9-0ca398c55b08
 
+in 2D what is looks like:
+
+https://github.com/96mat/Turing-Patterns/assets/66094732/39c321db-0f0d-4dc3-a8b7-6b46a79cd793
+
+
+
+
+
