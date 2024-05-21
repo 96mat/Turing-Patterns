@@ -15,4 +15,10 @@ while its _weak formulation_ is:
 \int_{\Omega} (Y^{n+1}-Y^n)v+\nu \Delta t \nabla Y^{n+1}\nabla v- \Delta t(cX^{n+1}+dY^{n+1})v\thinspace d\Omega &=0
 \end{align}
 ```
-Leveragin the ```GMRES``` algorithm and the ```ilu``` preconditioner the solution I got:
+Leveragin the ```GMRES``` algorithm and the ```ilu``` preconditioner the solution I got are in ```/media``` one extract is:
+
+
+
+
+https://github.com/96mat/Turing-Patterns/assets/66094732/c5b18860-a128-4f6c-bcc9-0ca398c55b08
+
