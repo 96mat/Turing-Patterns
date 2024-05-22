@@ -1,4 +1,6 @@
 # Turing-Patterns
+Model from the following [article](https://royalsocietypublishing.org/doi/10.1098/rstb.1952.0012).
+
 The _Strong Formulation_ of the problem:
 
 $$\begin{cases}
