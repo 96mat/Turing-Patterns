@@ -33,12 +33,13 @@ Equations in weak form:
 
 ```math
 \begin{align}
-F= & +\int_{\Omega} \frac{u_1\cdot v_1}{dt}\thinspace d\Omega\\
-& +\int_{\Omega} \frac{u_2\cdot v_2}{dt}\thinspace d\Omega\\
-& +\int_{\Omega} \nabla u_1 : \nabla v_1 \thinspace d\Omega\\
-& +\int_{\Omega} \nabla u_2 : \nabla v_2 \thinspace d\Omega\\
-& -\bigg(\int_{\Omega} \frac{u_{n_1} \cdot v_1}{dt}+\int_{\Omega} \frac{u_{n_2}\cdot v_2}{dt}\bigg) \thinspace d\Omega\\
-& -\int_{\Omega} (ff \cdot v_1 + gg \cdot v_2)\thinspace d\Omega =0
+F= & +\int_{\Omega} \frac{u_1^{n+1}\cdot v_1}{dt}\thinspace d\Omega\\
+& +\int_{\Omega} \frac{u_2^{n+1}\cdot v_2}{dt}\thinspace d\Omega\\
+& +\int_{\Omega} \nabla u_1^{n+1} : \nabla v_1 \thinspace d\Omega\\
+& +\int_{\Omega} \nabla u_2^{n+1} : \nabla v_2 \thinspace d\Omega\\
+& -\bigg(\int_{\Omega} \frac{u_{n_1}^{n} \cdot v_1}{dt}+\int_{\Omega} \frac{u_{n_2}^{n}\cdot v_2}{dt}\bigg) \thinspace d\Omega\\
+& -\int_{\Omega} (ff^{n} \cdot v_1 + gg^{n} \cdot v_2)\thinspace d\Omega =0\\
+& + \text{Pure Neuman BC}
 \end{align}
 ```
 
