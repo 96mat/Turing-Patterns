@@ -6,7 +6,6 @@ The _Strong Formulation_ of the problem:
 $$\begin{cases}
 \frac{\partial X}{\partial t}=a(X-h)+b(Y-k)+\mu \nabla^2 X \\\\
 \frac{\partial Y}{\partial t}=c(X-h)+d(Y-k)+\nu \nabla^2 Y \qquad (1)\\
-+\text{Pure NC}\\
 +\text{Periodic BC}
 \end{cases}$$
 
