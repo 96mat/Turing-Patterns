@@ -37,9 +37,10 @@ F= & +\int_{\Omega} \frac{u_1^{n+1}\cdot v_1}{dt}\thinspace d\Omega\\
 & +\int_{\Omega} \frac{u_2^{n+1}\cdot v_2}{dt}\thinspace d\Omega\\
 & +\int_{\Omega} \nabla u_1^{n+1} : \nabla v_1 \thinspace d\Omega\\
 & +\int_{\Omega} \nabla u_2^{n+1} : \nabla v_2 \thinspace d\Omega\\
-& -\bigg(\int_{\Omega} \frac{u_{n_1}^{n} \cdot v_1}{dt}+\int_{\Omega} \frac{u_{n_2}^{n}\cdot v_2}{dt}\bigg) \thinspace d\Omega\\
-& -\int_{\Omega} (u_1^{n}_{n_1}-\alpha u_2^n_{n_2} +\gamma u_1^n_{n_1}u_2^n_{n_2}-u_1^3_{n_1}) \cdot v_1 + (u_1^{n}_{n_1}-\beta u_2^{n}_{n_2}) \cdot v_2)\thinspace d\Omega =0\\
-& + \text{Pure Neuman BC}
+& -\int_{\Omega} \frac{u_{n_1}^{n} \cdot v_1}{dt} \thinspace d\Omega -\int_{\Omega} \frac{u_{n_2}^{n}\cdot v_2}{dt} \thinspace d\Omega\\
+& -\int_{\Omega} (u^{n}_{n_1}-\alpha u^n_{n_2} +\gamma u^n_{n_1}u^n_{n_2}-u^{3,n}_{n_1}) \cdot v_1 \thinspace d\Omega\\
+& -\int_{\Omega}  (u^{n}_{n_1}-\beta u^{n}_{n_2}) \cdot v_2\thinspace d\Omega\\
+& + \text{Periodic BC}
 \end{align}
 ```
 
