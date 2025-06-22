@@ -40,8 +40,8 @@ Equations in weak form:
 
 ```math
 \begin{align}
-F= & +\int_{\Omega} \frac{u_1^{n+1}\cdot v_1}{dt}\thinspace d\Omega\\
-& +\int_{\Omega} \frac{u_2^{n+1}\cdot v_2}{dt}\thinspace d\Omega\\
+F= & +\int_{\Omega} \frac{u_1^{n+1}}{dt}\cdot v_1\thinspace d\Omega\\
+& +\int_{\Omega} \frac{u_2^{n+1}}{dt}\cdot v_2\thinspace d\Omega\\
 & +\mu\int_{\Omega} \nabla u_1^{n+1} : \nabla v_1 \thinspace d\Omega\\
 & +\nu\int_{\Omega} \nabla u_2^{n+1} : \nabla v_2 \thinspace d\Omega\\
 & -a\int_{\Omega} \frac{u_{n_1}^{n} }{dt}\cdot v_1 \thinspace d\Omega -b\int_{\Omega} \frac{u_{n_2}^{n}}{dt}\cdot v_1 \thinspace d\Omega\\
