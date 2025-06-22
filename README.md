@@ -28,10 +28,11 @@ in 2D what it looks like:
 https://github.com/96mat/Turing-Patterns/assets/66094732/39c321db-0f0d-4dc3-a8b7-6b46a79cd793
 
 ## Possibility to extend to the non-linear case
+Schnakenberg’s nonlinear revision of the original Turing instability reads as follows
 
 $$\begin{cases}
-\frac{\partial u}{\partial t} -a(u-h) -b(v-k) -\mu \nabla^2 X  =u -\alpha v^2 +\gamma uv -u^3 \\\\
-\frac{\partial v}{\partial t}-c(u-h)-d(v-k)-\nu \nabla^2 Y  =u-\beta v\qquad (4)\\
+\frac{\partial u}{\partial t} -a(u-h) -b(v-k) -\mu \nabla^2 u  =u -\alpha v^2 +\gamma uv -u^3 \\\\
+\frac{\partial v}{\partial t}-c(u-h)-d(v-k)-\nu \nabla^2 v  =u-\beta v\qquad (4)\\
 +\text{Periodic BC}
 \end{cases}$$
 
@@ -41,9 +42,10 @@ Equations in weak form:
 \begin{align}
 F= & +\int_{\Omega} \frac{u_1^{n+1}\cdot v_1}{dt}\thinspace d\Omega\\
 & +\int_{\Omega} \frac{u_2^{n+1}\cdot v_2}{dt}\thinspace d\Omega\\
-& +\int_{\Omega} \nabla u_1^{n+1} : \nabla v_1 \thinspace d\Omega\\
-& +\int_{\Omega} \nabla u_2^{n+1} : \nabla v_2 \thinspace d\Omega\\
-& -\int_{\Omega} \frac{u_{n_1}^{n} \cdot v_1}{dt} \thinspace d\Omega -\int_{\Omega} \frac{u_{n_2}^{n}\cdot v_2}{dt} \thinspace d\Omega\\
+& +\mu\int_{\Omega} \nabla u_1^{n+1} : \nabla v_1 \thinspace d\Omega\\
+& +\nu\int_{\Omega} \nabla u_2^{n+1} : \nabla v_2 \thinspace d\Omega\\
+& -a\int_{\Omega} \frac{u_{n_1}^{n} }{dt}\cdot v_1 \thinspace d\Omega -b\int_{\Omega} \frac{u_{n_2}^{n}}{dt}\cdot v_1 \thinspace d\Omega\\
+& -c\int_{\Omega} \frac{u_{n_1}^{n}}{dt} \cdot v_2 \thinspace d\Omega -d\int_{\Omega} \frac{u_{n_2}^{n}}{dt}\cdot v_2 \thinspace d\Omega\\
 & -\int_{\Omega} (u^{n}_{n_1}-\alpha u^n_{n_2} +\gamma u^n_{n_1}u^n_{n_2}-u^{3,n}_{n_1}) \cdot v_1 \thinspace d\Omega\\
 & -\int_{\Omega}  (u^{n}_{n_1}-\beta u^{n}_{n_2}) \cdot v_2\thinspace d\Omega\\
 & + \text{Periodic BC}
