@@ -53,6 +53,5 @@ F= & +\int_{\Omega} \frac{u_1^{n+1}}{dt}\cdot v_1\thinspace d\Omega\\
 \end{align}
 ```
 
-
-
+This solution is placed inside the ```/media``` folder
 
