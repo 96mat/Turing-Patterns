@@ -19,6 +19,7 @@ while its _weak formulation_ is:
 From [FEniCS](https://fenicsproject.org/) leveraging the ```GMRES``` algorithm and the ```ilu``` preconditioner $(2),(3)$ can be assembled and solved. The code can be found in ```/src```. The outcomes I got are in ```/media```, whereas one extract is:
 
 
+$\blacktriangleright$ https://github.com/96mat/Turing-Patterns/media/3D-Turing-linear-gmres.mp4
 
 
 https://github.com/96mat/Turing-Patterns/assets/66094732/c5b18860-a128-4f6c-bcc9-0ca398c55b08
