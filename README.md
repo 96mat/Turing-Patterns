@@ -53,5 +53,9 @@ F= & +\int_{\Omega} \frac{u_1^{n+1}}{dt}\cdot v_1\thinspace d\Omega\\
 \end{align}
 ```
 
-This solution is placed inside the ```/media``` folder
+Solution of the nonlinear problem
+
+
+https://github.com/user-attachments/assets/9b19874c-0895-48f0-be03-8f2c561ffe15
+
 
