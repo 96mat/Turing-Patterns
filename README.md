@@ -33,7 +33,7 @@ in 2D what it looks like:
 https://github.com/96mat/Turing-Patterns/assets/66094732/39c321db-0f0d-4dc3-a8b7-6b46a79cd793
 
 ## Possibility to extend to the non-linear case
-Schnakenberg’s nonlinear revision of the original Turing instability reads as follows
+FitzHugh–Nagumo’s nonlinear revision of the original Turing instability reads as follows
 
 $$\begin{cases}
 \frac{\partial u}{\partial t} -a(u-h) -b(v-k) -\mu \nabla^2 u  =u -\alpha v^2 +\gamma uv -u^3 \\\\
