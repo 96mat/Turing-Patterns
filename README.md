@@ -6,7 +6,8 @@ The _Strong Formulation_ of the problem:
 $$\begin{cases}
 \frac{\partial X}{\partial t}=a(X-h)+b(Y-k)+\mu \nabla^2 X \\\\
 \frac{\partial Y}{\partial t}=c(X-h)+d(Y-k)+\nu \nabla^2 Y \qquad (1)\\
-+\text{Periodic BC}
++\text{Periodic BC}\\
++\text{Neumann BC}
 \end{cases}$$
 
 while its _weak formulation_ is:
@@ -19,7 +20,10 @@ while its _weak formulation_ is:
 From [FEniCS](https://fenicsproject.org/) leveraging the ```GMRES``` algorithm and the ```ilu``` preconditioner $(2),(3)$ can be assembled and solved. The code can be found in ```/src```. The outcomes I got are in ```/media```, whereas one extract is:
 
 
-$\blacktriangleright$ https://github.com/96mat/Turing-Patterns/media/3D-Turing-linear-gmres.mp4
+
+https://github.com/user-attachments/assets/14079d51-5ece-4b49-ba2e-1c9edfef3d2e
+
+
 
 
 https://github.com/96mat/Turing-Patterns/assets/66094732/c5b18860-a128-4f6c-bcc9-0ca398c55b08
@@ -34,7 +38,8 @@ Schnakenberg’s nonlinear revision of the original Turing instability reads as 
 $$\begin{cases}
 \frac{\partial u}{\partial t} -a(u-h) -b(v-k) -\mu \nabla^2 u  =u -\alpha v^2 +\gamma uv -u^3 \\\\
 \frac{\partial v}{\partial t}-c(u-h)-d(v-k)-\nu \nabla^2 v  =u-\beta v\qquad (4)\\
-+\text{Periodic BC}
++\text{Periodic BC}\\
++\text{Neumann BC}
 \end{cases}$$
 
 Equations in weak form:
@@ -49,7 +54,7 @@ F= & +\int_{\Omega} \frac{u_1^{n+1}}{dt}\cdot v_1\thinspace d\Omega\\
 & -c\int_{\Omega} \frac{u_{n_1}^{n}}{dt} \cdot v_2 \thinspace d\Omega -d\int_{\Omega} \frac{u_{n_2}^{n}}{dt}\cdot v_2 \thinspace d\Omega\\
 & -\int_{\Omega} (u^{n}_{n_1}-\alpha u^n_{n_2} +\gamma u^n_{n_1}u^n_{n_2}-u^{3,n}_{n_1}) \cdot v_1 \thinspace d\Omega\\
 & -\int_{\Omega}  (u^{n}_{n_1}-\beta u^{n}_{n_2}) \cdot v_2\thinspace d\Omega\\
-& + \text{Periodic BC}
+& + \text{Periodic BC}\\
 \end{align}
 ```
 
