@@ -32,7 +32,7 @@ in 2D what it looks like:
 
 https://github.com/96mat/Turing-Patterns/assets/66094732/39c321db-0f0d-4dc3-a8b7-6b46a79cd793
 
-## Possibility to extend to the non-linear case
+## Dufiet-Boissonade model for Turing's equations 
 FitzHugh–Nagumo’s nonlinear revision of the original Turing instability reads as follows
 
 $$\begin{cases}
