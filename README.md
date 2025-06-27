@@ -4,8 +4,8 @@ Model from the following [article](https://royalsocietypublishing.org/doi/10.109
 The _Strong Formulation_ of the problem:
 
 $$\begin{cases}
-\frac{\partial X}{\partial t}=a(X-h)+b(Y-k)+\mu \nabla^2 X \\\\
-\frac{\partial Y}{\partial t}=c(X-h)+d(Y-k)+\nu \nabla^2 Y \qquad (1)\\
+\frac{\partial u}{\partial t}=a(u-h)+b(v-k)+\mu \nabla^2 u \\\\
+\frac{\partial v}{\partial t}=c(u-h)+d(v-k)+\nu \nabla^2 v \qquad (1)\\
 +\text{Periodic BC}\\
 +\text{Neumann BC}
 \end{cases}$$
@@ -13,8 +13,8 @@ $$\begin{cases}
 while its _weak formulation_ is:
 ```math
 \begin{align}
-\int_{\Omega} (X^{n+1}-X^n)v+\mu \Delta t \nabla X^{n+1}\nabla v- \Delta t(aX^{n+1}+bY^{n+1})v\thinspace d\Omega &=0 \qquad (2)\\
-\int_{\Omega} (Y^{n+1}-Y^n)v+\nu \Delta t \nabla Y^{n+1}\nabla v- \Delta t(cX^{n+1}+dY^{n+1})v\thinspace d\Omega &=0 \qquad (3)
+\int_{\Omega} (u^{n+1}-u^n)/\Delta t\cdot v_1+\mu  \nabla u^{n+1}:\nabla v_1- (au^{n+1}+bv^{n+1})v_1\thinspace d\Omega &=0 \qquad (2)\\
+\int_{\Omega} (v^{n+1}-v^n)/\Delta t\cdot v_2+\nu  \nabla v^{n+1}:\nabla v_2- (cu^{n+1}+dv^{n+1})v_2\thinspace d\Omega &=0 \qquad (3)
 \end{align}
 ```
 From [FEniCS](https://fenicsproject.org/) leveraging the ```GMRES``` algorithm and the ```ilu``` preconditioner $(2),(3)$ can be assembled and solved. The code can be found in ```/src```. The outcomes I got are in ```/media```, whereas one extract is:
@@ -33,7 +33,7 @@ in 2D what it looks like:
 https://github.com/96mat/Turing-Patterns/assets/66094732/39c321db-0f0d-4dc3-a8b7-6b46a79cd793
 
 ## Dufiet-Boissonade model for Turing's equations 
-The nonlinear revision of the original Turing instability reads as follows
+The [nonlinear](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.53.4883) revision of the original Turing instability reads as follows
 
 $$\begin{cases}
 \frac{\partial u}{\partial t} -a(u-h) -b(v-k) -\mu \nabla^2 u  =u -\alpha v^2 +\gamma uv -u^3 \\\\
