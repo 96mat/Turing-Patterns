@@ -7,7 +7,6 @@ $$\begin{cases}
 \frac{\partial u}{\partial t}=a(u-h)+b(v-k)+\mu \nabla^2 u \\\\
 \frac{\partial v}{\partial t}=c(u-h)+d(v-k)+\nu \nabla^2 v \qquad (1)\\
 +\text{Periodic BC}\\
-+\text{Neumann BC}
 \end{cases}$$
 
 while its _weak formulation_ is:
@@ -38,8 +37,7 @@ The [nonlinear](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.53.4883) 
 $$\begin{cases}
 \frac{\partial u}{\partial t} -a(u-h) -b(v-k) -\mu \nabla^2 u  =u -\alpha v^2 +\gamma uv -u^3 \\\\
 \frac{\partial v}{\partial t}-c(u-h)-d(v-k)-\nu \nabla^2 v  =u-\beta v\qquad (4)\\
-+\text{Periodic BC}\\
-+\text{Neumann BC}
++\text{Periodic BC}
 \end{cases}$$
 
 Equations in weak form:
