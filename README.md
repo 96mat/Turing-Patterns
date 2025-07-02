@@ -16,7 +16,7 @@ while its _weak formulation_ is:
 \int_{\Omega} (v^{n+1}-v^n)/\Delta t\cdot v_2+\nu  \nabla v^{n+1}:\nabla v_2- (cu^{n+1}+dv^{n+1})v_2\thinspace d\Omega &=0 \qquad (3)
 \end{align}
 ```
-From [Firedrake](https://www.firedrakeproject.org/) leveraging the ```GMRES``` algorithm and the ```ilu``` preconditioner $(2),(3)$ can be assembled and solved. The code can be found in ```/src```. The outcomes I got are in ```/media```, whereas one extract is:
+From [Firedrake](https://www.firedrakeproject.org/) leveraging the ```GMRES``` algorithm and the ```ilu``` preconditioner $(2),(3)$ can be assembled and solved. The code can be found in ```/src```. The outcomes I got are in higer resolution in ```/media```, whereas their compressed version are:
 
 
 
